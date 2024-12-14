@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo ! </h1>
+    <forms>
+ <input name="city" 
+ type="text" 
+ placeholder="Enter a City" 
+ minlength="2"
+  maxlength="10"
+  required >
+    </forms>
+
+    <button> Our <b>First</b> Button! </button>
+    <h2>Register</h2>
+    <forms>
+        <button type="button">Click Me</button>
+        <input 
+        type="email" placeholder="Email" name="Email">
+        <input 
+        type="password" placeholder="Password"
+        name="password">
+        <input type="checkbox"
+         name="tos-agree" > I agree to terms of service
+
+<p>Select Shirt Size</p>
+<input type="radio" name="Shirt-size" value="XS">XS <br>
+<input type="radio" name="Shirt-size" value="S">S <br>
+<input type="radio" name="Shirt-size" value="M">M <br>
+<input type="radio" name="Shirt-size" value="L">L <br>
+
+         <button type="submit">Submit Form </button>
+
+        <!-- <input type="submit" value="Go!"> -->       
+    </forms>
+<h2>Other Input Types</h2>
+<forms>
+Pick a Color: <input types="color" name="color">
+Enter your Birthday: <input types="date" name="Birthday">
+How Happy Are You?<input type="range" name="happiness"
+ minlength="1" 
+ maxlength="10" 
+ step="2">
+ <br>
+ Select a State:
+ <select name="State">
+    <option>-Please Select a Option-</option>
+    <option value="AL">Alabama</option>    
+    <option value="AK">Alaska</option>
+    <option value="AZ">Arizona</option>
+    <option value="AR">Arkansas</option>
+ </select>
+ <br>
+ Please Write Exquisite Essay:
+ <textarea name="eassy" 
+ cols="30" row="10"
+  minlength="5" maxlength="300">Min of 5 and Max
+ of 300 charactors.
+</textarea>
+<button type="submit">Submit form</button>
+
+</forms>
+<h2>Search Reddit</h2>
+<form action="https://www.reddit.com/search" method="get">
+<input type="text" name="q" placeholder="Search Terms">
+<br>
+Sort By :
+<select name="sort">
+<option value="top">Top</option>
+<option value="new">New</option>
+<option value="comments">Comments</option>
+</select>
+<button type="submit">search</button>
+<!--https:www.reddit.com/search?q=pickles&sort=top-->
+
+</form> 
+<form method="post" enctype="multipart/form-data">
+<label>
+    This wont work but go ahead. <input type="file">
+</label>
+</form>
+
+</body>
+</html>
